@@ -6,7 +6,7 @@
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
   "templateVersion": 2,
-  "author": "Moo Man, Perfectros, Roman Kühnel",
+  "author": "Moo Man, Perfectros, Bellum45",
   "scripts": [],
   "esmodules": [
     "scripts/common/hooks.js"
@@ -42,7 +42,7 @@
   "secondaryTokenAttribute": null,
   "url": "https://github.com/Bellum45/WrathAndGlory-FoundryVTT",
   "socket": true,
-  "manifest": "https://raw.githubusercontent.com/Bellum45/WrathAndGlory-FoundryVTT/master/system.json",
+  "manifest": "https://raw.githubusercontent.com/Bellum45/WrathAndGlory-FoundryVTT/system.json",
   "download": "https://github.com/Bellum45/WrathAndGlory-FoundryVTT/archive/master.zip",
   "license": "LICENSE.txt"
 }

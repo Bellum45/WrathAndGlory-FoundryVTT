@@ -1,5 +1,5 @@
 # Wrath & Glory
-An **UNOFFICIAL** system for playing Wrath & Glory on Foundry VTT. Originally created by Perfectro, continued and maintained by Moo Man
+An **UNOFFICIAL** system for playing Wrath & Glory on Foundry VTT. Originally created by Perfectro, continued by Moo Man and Bellum45.
 
 It provides support for **character sheets only**, game content should be drawn from official source books.
 
