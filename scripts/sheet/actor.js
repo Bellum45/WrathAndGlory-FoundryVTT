@@ -19,6 +19,7 @@ export class WrathAndGloryActorSheet extends ActorSheet {
         html.find(".roll-influence").click(async ev => await this._prepareRollInfluence(ev));
         html.find(".roll-weapon").click(async ev => await this._prepareRollWeapon(ev));
         html.find(".roll-psychic-power").click(async ev => await this._prepareRollPsychicPower(ev));
+		html.find(".roll-soak").click(async ev => await this._prepareRollSoak(ev));
 
     }
 
@@ -250,6 +251,15 @@ export class WrathAndGloryActorSheet extends ActorSheet {
         this.rollData.name = psychicPower.data.name;
         await preparePsychicRoll(this.rollData);
     }
+
+	async _prepareRollSoak(event) {
+		event.preventDefault();
+        this._resetRollData();
+        this.rollData.name = "ROLL.SOAK";
+        this.rollData.pool.size = this.actor.data.data.combat.soak.total;
+        await prepareCommonRoll(this.rollData);
+	}
+	
 
     _resetRollData() {
         let rank = 0;
