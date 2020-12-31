@@ -67,7 +67,7 @@ export class WrathAndGloryActorSheet extends ActorSheet {
 
     _onItemDelete(event) {
         event.preventDefault();
-        const div = $(event.currentTarget).parents(".item");
+        const div = $(event.currentTarget).parents(".item");_prepareRollSoak
         this.actor.deleteOwnedItem(div.data("itemId"));
         div.slideUp(200, () => this.render(false));
     }
