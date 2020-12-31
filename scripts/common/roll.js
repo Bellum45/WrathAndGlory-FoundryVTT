@@ -232,13 +232,22 @@ function _countFailure(rollData) {
 }
 
 function _countShifting(rollData) {
-  let shifting = 0;
-  let margin = rollData.result.success - rollData.dn;
+  
+  let margin = rollData.dn;
   for (let i = 0; i < rollData.result.dice.length; i++) {
-    if (rollData.result.dice[i].value === 2 && margin - 2 >= 0) {
-      shifting++;
-      margin = margin - 2;
-    }
+	  if (rollData.result.dice[i].value === 1) {
+		  --margin;
+	  }
+  }
+  
+  let shifting = 0;
+  for (let i = 0; i < rollData.result.dice.length; i++) {
+	  if (rollData.result.dice[i].value === 2 && margin > 0) {
+		  margin -= 2;
+	  }
+	  else if (rollData.result.dice[i].value === 2 && margin <= 0) {
+			++shifting;
+	  }
   }
   return shifting;
 }
