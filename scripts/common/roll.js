@@ -83,7 +83,7 @@ function _rollDice(rollData, formula, isWrath) {
 }
 
 function _rollDamage(rollData) {
-  let ed = rollData.weapon.ed.base + rollData.weapon.ed.bonus;
+  let ed = rollData.weapon.ed.base + rollData.weapon.ed.bonus + rollData.result.shifting;
   let formula = `${ed}d6`;
   let r = new Roll(formula, {});
   r.evaluate();
