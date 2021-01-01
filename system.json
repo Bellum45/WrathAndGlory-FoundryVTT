@@ -2,12 +2,7 @@
   "name": "wrath-and-glory",
   "title": "Wrath & Glory",
   "description": "In the grim darkness of the far future, there is only war",
-<<<<<<< HEAD
   "version": "1.12.2",
-  "version": "1.12.2",
-=======
-  "version": "1.12.1",
->>>>>>> 07ea96b1dce5338302a88ec4fd28af1a35bcb80a
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
   "templateVersion": 3,
